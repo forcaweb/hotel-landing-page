@@ -71,6 +71,7 @@ body {
             align-items: center;
             flex-direction: row;
             color: var(--black);
+            gap: 10px;
 
             img {
               position: relative;
@@ -138,6 +139,87 @@ body {
 
   .mobile {
     display: none;
+    .container-menu-right {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 1000px;
+      min-height: 100vh;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.4s ease-in-out all;
+      opacity: 0;
+      z-index: 1000000;
+
+      .menu-wrapper {
+        width: 100%;
+        position: relative;
+        flex: 1;
+        max-width: 300px;
+        overflow: hidden;
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--white);
+
+        .control-close {
+          position: relative;
+          width: 100%;
+          background-color: var(--black);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          color: var(--white);
+
+          button {
+            margin-right: auto;
+            background-color: var(--green);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            padding: 10px;
+            color: var(--white);
+            border: none;
+            outline: none;
+            cursor: pointer;
+          }
+
+          h3 {
+            margin-right: auto;
+          }
+        }
+
+        .navigations {
+          padding: 0;
+        }
+        .navigations,
+        .navigations .list-navs {
+          flex-direction: column !important;
+          gap: 0;
+        }
+        .navigations .list-navs {
+          width: 100%;
+
+          .list {
+            width: 100%;
+            border: 1px solid var(--grey);
+          }
+        }
+      }
+    }
+
+    .active{
+      right: 0px;
+      opacity: 1;
+    }
   }
 }
 
