@@ -6,20 +6,17 @@
     <title>Pousada Ágape</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Libertinus+Math&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -89,7 +86,11 @@
         <div class="container-menu-right">
           <div class="menu-wrapper">
             <div class="control-close">
-              <button type="button" class="fa-solid fa-xmark" id="btn-close"></button>
+              <button
+                type="button"
+                class="fa-solid fa-xmark"
+                id="btn-close"
+              ></button>
               <h3>Menu</h3>
             </div>
             <nav class="navigations">
@@ -104,10 +105,14 @@
 
               <ul class="list-navs">
                 <li class="list">
-                  <a href="/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                  <a href="/"
+                    ><i class="fa-brands fa-instagram"></i> Instagram</a
+                  >
                 </li>
                 <li class="list">
-                  <a href="/"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                  <a href="/"
+                    ><i class="fa-brands fa-facebook-f"></i> Facebook</a
+                  >
                 </li>
                 <li class="list">
                   <a class="btn-booking" href="/">Reservar agora</a>
@@ -119,6 +124,65 @@
         <!-- Fim Menu Right -->
       </header>
       <!-- Fim Menu top Mobile -->
+      <!-- Carrosel E Formulario -->
+      <section class="carrosel-and-forms">
+        <div class="carrosel">
+          <swiper-container
+            class="mySwiper"
+            space-between="30"
+            centered-slides="true"
+            autoplay-delay="2500"
+            autoplay-disable-on-interaction="false"
+          >
+            <swiper-slide>
+              <img src="/imgs/agape_1.jpg" alt="agape" width="1280" height="720">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="/imgs/agape_2.jpg" alt="agape" width="1280" height="720">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="/imgs/agape_3.jpg" alt="agape" width="1280" height="720">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="/imgs/agape_4.jpg" alt="agape" width="1280" height="720">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="/imgs/agape_5.jpg" alt="agape" width="1280" height="720">
+            </swiper-slide>
+          </swiper-container>
+        </div>
+
+        <div class="forms-and-text">
+          <div class="text-welcome">
+            <h1>Pousada Ágape</h1>
+            <p>Bem vindo ao lugar perfeito para renovar suas energias</p>
+            <a href="/">Reserve agora!</a>
+          </div>
+          <div class="forms">
+            <form action="#" method="post">
+              <h2>Reserve agora</h2>
+              <div class="camps-forms">
+                <label for="checkin">Check-In:</label>
+                <input type="date" name="checkin" id="checkin" required placeholder="Escolha uma data...">
+              </div>
+              <div class="camps-forms">
+                <label for="checkout">Check-Out:</label>
+                <input type="date" name="checkout" id="checkout" required placeholder="Escolha uma data...">
+              </div>
+              <div class="camps-forms">
+                <label for="persons-adults">Adultos:</label>
+                <input type="number" min="1" max="10" name="persons-adults" required id="persons-adults" placeholder="Quandtos adultos?">
+              </div>
+              <div class="camps-forms">
+                <label for="persons-childrens">Crianças:</label>
+                <input type="number" min="1" max="10" name="persons-childrens" required id="persons-childrens" placeholder="Quandtos crianças?">
+              </div>
+              <button type="submit" id="btn-submit">Checar Disponibilidade</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Fim Carrosel E Formulario -->
     </main>
 
     <script
@@ -127,6 +191,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <script src="/js/page.js"></script>
   </body>
