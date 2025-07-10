@@ -6,7 +6,10 @@
     <title>Pousada Ágape</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -46,13 +49,19 @@
 
           <ul class="list-navs">
             <li class="list">
-              <a href="/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.instagram.com/pousadaagape/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </li>
             <li class="list">
-              <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61568716334677"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
             </li>
             <li class="list">
-              <a class="btn-booking" href="/">Reservar agora</a>
+              <a class="btn-booking" href="https://wa.me/553591596756"
+                >Reservar agora</a
+              >
             </li>
           </ul>
         </nav>
@@ -105,17 +114,20 @@
 
               <ul class="list-navs">
                 <li class="list">
-                  <a href="/"
+                  <a href="https://www.instagram.com/pousadaagape/"
                     ><i class="fa-brands fa-instagram"></i> Instagram</a
                   >
                 </li>
                 <li class="list">
-                  <a href="/"
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61568716334677"
                     ><i class="fa-brands fa-facebook-f"></i> Facebook</a
                   >
                 </li>
                 <li class="list">
-                  <a class="btn-booking" href="/">Reservar agora</a>
+                  <a class="btn-booking" href="https://wa.me/553591596756"
+                    >Reservar agora</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -135,19 +147,44 @@
             autoplay-disable-on-interaction="false"
           >
             <swiper-slide>
-              <img src="/imgs/agape_1.jpg" alt="agape" width="1280" height="720">
+              <img
+                src="/imgs/agape_1.jpg"
+                alt="agape"
+                width="1280"
+                height="720"
+              />
             </swiper-slide>
             <swiper-slide>
-              <img src="/imgs/agape_2.jpg" alt="agape" width="1280" height="720">
+              <img
+                src="/imgs/agape_2.jpg"
+                alt="agape"
+                width="1280"
+                height="720"
+              />
             </swiper-slide>
             <swiper-slide>
-              <img src="/imgs/agape_3.jpg" alt="agape" width="1280" height="720">
+              <img
+                src="/imgs/agape_3.jpg"
+                alt="agape"
+                width="1280"
+                height="720"
+              />
             </swiper-slide>
             <swiper-slide>
-              <img src="/imgs/agape_4.jpg" alt="agape" width="1280" height="720">
+              <img
+                src="/imgs/agape_4.jpg"
+                alt="agape"
+                width="1280"
+                height="720"
+              />
             </swiper-slide>
             <swiper-slide>
-              <img src="/imgs/agape_5.jpg" alt="agape" width="1280" height="720">
+              <img
+                src="/imgs/agape_5.jpg"
+                alt="agape"
+                width="1280"
+                height="720"
+              />
             </swiper-slide>
           </swiper-container>
         </div>
@@ -156,33 +193,81 @@
           <div class="text-welcome">
             <h1>Pousada Ágape</h1>
             <p>Bem vindo ao lugar perfeito para renovar suas energias</p>
-            <a href="/">Reserve agora!</a>
+            <a href="https://wa.me/553591596756">Reserve agora!</a>
           </div>
           <div class="forms">
-            <form action="#" method="post">
+            <form id="form-booking" method="post">
               <h2>Reserve agora</h2>
               <div class="camps-forms">
                 <label for="checkin">Check-In:</label>
-                <input type="date" name="checkin" id="checkin" required placeholder="Escolha uma data...">
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  placeholder="Escolha uma data..."
+                />
               </div>
               <div class="camps-forms">
                 <label for="checkout">Check-Out:</label>
-                <input type="date" name="checkout" id="checkout" required placeholder="Escolha uma data...">
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  placeholder="Escolha uma data..."
+                />
               </div>
               <div class="camps-forms">
                 <label for="persons-adults">Adultos:</label>
-                <input type="number" min="1" max="10" name="persons-adults" required id="persons-adults" placeholder="Quandtos adultos?">
+                <input
+                  type="number"
+                  min="1"
+                  max="10"
+                  name="persons-adults"
+                  required
+                  id="persons-adults"
+                  placeholder="Quandtos adultos?"
+                />
               </div>
               <div class="camps-forms">
                 <label for="persons-childrens">Crianças:</label>
-                <input type="number" min="1" max="10" name="persons-childrens" required id="persons-childrens" placeholder="Quandtos crianças?">
+                <input
+                  type="number"
+                  min="1"
+                  max="10"
+                  name="persons-childrens"
+                  required
+                  id="persons-childrens"
+                  placeholder="Quandtos crianças?"
+                />
               </div>
-              <button type="submit" id="btn-submit">Checar Disponibilidade</button>
+              <button type="submit" id="btn-submit">
+                Checar Disponibilidade
+              </button>
             </form>
           </div>
         </div>
       </section>
       <!-- Fim Carrosel E Formulario -->
+      <!-- Sobre -->
+      <section class="container-about">
+        <div class="box-dialog">
+          <h3>Sobre Nós</h3>
+          <h2>A Pousda Ágape</h2>
+          <p>
+            Sona.com is a leading online accommodation site. We’re passionate
+            about travel. Every day, we inspire and reach millions of travelers
+            across 90 local websites in 41 languages.
+          </p>
+        </div>
+        <div class="box-imgs">
+          <img src="/imgs/d1.jpg" alt="Quarto" width="1280" height="720">
+          <img src="/imgs/d2.jpg" alt="Quarto" width="1280" height="720">
+        </div>
+      </section>
+
+      <!-- Fim Sobre -->
     </main>
 
     <script

@@ -400,6 +400,87 @@ body {
       }
     }
   }
+
+  .container-about {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: 10px solid var(--white);
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .box-dialog {
+      position: relative;
+      background: linear-gradient(
+        to right,
+        var(--white),
+        var(--white),
+        transparent
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      max-width: 550px;
+      gap: 10px;
+      padding: 20px;
+
+      h3 {
+        font-size: 18px;
+        position: relative;
+        color: var(--green-clean);
+        display: block;
+        
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 50px;
+        position: relative;
+        color: var(--black);
+        display: block;
+        font-family: "Lora";
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        position: relative;
+        color: var(--black);
+        display: block;
+        font-family: "Cabin";
+        text-align: center;
+      }
+    }
+
+    .box-imgs {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+      flex-wrap: wrap;
+      overflow: hidden;
+      width: 100%;
+      padding: 20px;
+
+      img {
+        width: 100%;
+        max-width: 450px;
+        position: relative;
+        display: block;
+        object-fit: cover;
+        height: 370px;
+        border-radius: 7px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 750px) {
