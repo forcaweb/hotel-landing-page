@@ -426,7 +426,7 @@ body {
       align-items: center;
       flex-direction: column;
       width: 100%;
-      max-width: 550px;
+      max-width: 900px;
       gap: 10px;
       padding: 20px;
 
@@ -489,6 +489,8 @@ body {
     align-items: center;
     padding: 20px;
     flex-direction: column;
+    width: 100%;
+
     h3 {
       font-size: 18px;
       position: relative;
@@ -523,6 +525,7 @@ body {
       align-items: flex-start;
       flex-direction: row;
       flex-wrap: wrap;
+      width: 100%;
 
       .list-box {
         position: relative;
@@ -553,18 +556,53 @@ body {
         }
 
         p {
-      font-size: 14px;
-      position: relative;
-      color: var(--black);
-      display: block;
-      font-family: "Cabin";
-      text-align: center;
-    }
+          font-size: 14px;
+          position: relative;
+          color: var(--black);
+          display: block;
+          font-family: "Cabin";
+          text-align: center;
+        }
+      }
+
+      swiper-container {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        padding: 20px;
+        
+        background-color: var(--white);
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        background-color: var(--white);
+        overflow: hidden;
+      }
+
+      swiper-slide img {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        transform: translate(3px);
+        
+        background-color: var(--white);
       }
     }
   }
 
-  .footer-site{
+  .footer-site {
     position: relative;
     display: flex;
     justify-content: center;
@@ -573,6 +611,7 @@ body {
     color: var(--white);
     padding: 10px;
     width: 100%;
+    text-align: center;
   }
 }
 
